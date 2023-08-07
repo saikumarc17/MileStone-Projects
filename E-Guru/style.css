@@ -1,0 +1,334 @@
+body{
+    background: linear-gradient(to right, #FCFCFC 0%,#FCFCFC 60%, #ffffff 60%,#ffffff 100%);
+    font-family: 'Roboto', sans-serif;
+    max-width: 1444px;
+    margin: 0 auto;
+}
+
+/* header part start */
+header>.flex{
+    padding: 20px 50px 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hambergermenu{
+    display: none;
+}
+.logo>img{
+    padding-right: 20px;
+}
+.profile{
+    display: none;
+}
+header>.flex>div:first-child{
+    display: flex;
+
+    align-items: center;
+    font-weight: 900 !important;
+    font-size: 20px;
+}
+header>.flex>div:first-child>img{
+    padding-right: 20px;
+}
+header>.flex>div:first-child{
+    cursor: pointer;
+}
+
+.menu>a{
+    text-decoration: none;
+    color: #9C9898;
+    padding: 10px 30px;
+    font-size: 20px;
+}
+
+.menu>a:hover {
+    color: #FF5202;
+}
+.signup>a{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 15px 20px;
+    font-weight: bold;
+    font-size: 18px;
+}
+.signup>a:hover{
+    border: 1px solid #FF5202;
+    color: #FF5202;
+}
+
+
+/* header part end */
+.heroSection{
+    padding: 20px 50px 20px 50px;
+    display: grid;
+    grid-template-columns: 55% 40%;
+    justify-content: space-between;
+    align-items: center;
+    /* column-gap: 10px; */
+    height: 80vh;
+}
+.textSection{
+    position: relative;
+}
+.textSection>h1>img{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.textSection>h1{
+    font-size: 70px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    line-height: 100px;
+}
+.textSection>p{
+    padding:0px 15px ;
+    font-size: 25px;
+    font-weight: 200;
+    font-family: 'Roboto Flex', sans-serif;
+    border-left: 1px solid black;
+    line-height: 35px;
+}
+
+.herosectonparentdiv{
+    position: relative; 
+    display: flex; 
+    align-items: center; 
+    justify-content: flex-end;
+}
+
+.herosectonparentdiv>img{
+    position: absolute;
+}
+.herosectonparentdiv>img:first-child{
+    top: 0;
+    left: 0;
+}
+.herosectonparentdiv>img:nth-child(2){
+    bottom: 0;
+    left: 10px;
+}
+.herosectonparentdiv>img:nth-child(3){
+    bottom: 10%;
+    right: -10px;
+}
+
+.heroButtons{
+    margin-top: 60px;
+    height: 100px;
+}
+.heroButtons>img{
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+}
+.heroButtons_sm{
+    display: none;
+}
+
+.heroButtons>a{
+    text-decoration: none;
+    padding:20px 35px;
+    margin-right: 30px;
+    border: 1px solid black;
+    color: black;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.heroButtons>a:first-child{
+    background-color: #ff5202;
+    color: white;
+    border: none;
+}
+
+
+.imageSection{
+    height: 460px;
+    width: 460px;
+    
+}
+.imageSection>img{
+    position: absolute;
+    height: auto;
+}
+.item3{
+    bottom: 35px;
+    right: -5px;
+}
+.item2{
+    transform: scale(1.65);
+    right: 133px;
+    overflow: scroll;
+    top: 85px;
+}
+
+/* features */
+.bg-dark{
+   background-color:#262543;
+   display: flex;
+   flex-wrap: wrap;
+   color: white;
+   justify-content: space-between;
+   padding-left: 20px;
+}
+.footertext{
+    width: 350px;
+    padding: 40px;
+}
+.footertext>h1{
+    font-size: 45px;
+    line-height: 60px;
+}
+.footertext>span{
+    font-size: 22px;
+    line-height: 30px;
+    font-family: 'Roboto Flex', sans-serif;
+}
+
+
+.EOSSECTION{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* text-align: center; */
+    padding-top: 40px;
+}
+.EOSSECTION>.content{
+    width: 250px;
+    padding:40px 35px;
+}
+.EOSSECTION>.content>h2{
+    font-weight: 500;
+}
+.EOSSECTION>.content>p{
+    line-height: 25px;
+    font-weight: 400;
+    font-family: 'Roboto Flex', sans-serif;
+}
+.EOSSECTION>.content>img{
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    background-color: #1CD7AF;
+}
+.EOSSECTION>.content:nth-child(2)>img{
+    background-color: #FC5B11;
+    padding: 15px 18px;
+}
+.EOSSECTION>.content:nth-child(3)>img{
+    background-color: #525BF1;
+    padding: 17px 17px;
+}
+
+
+@media screen and (max-width:800px) {
+    .menu,.signup,.heroButtons{
+        display: none;
+    }
+    .profile,.hambergermenu{
+        display: block;
+    }
+    header>.flex{
+        padding: 15px;
+    }
+    .heroSection{
+       display: block; 
+       height: fit-content;
+       padding: 20px;
+    }
+    .textSection>h1{
+        font-size: 35px;
+        line-height: normal;
+        margin:30px 0;
+    }
+    .textSection>p{
+        font-size: 18px;
+        line-height: normal;
+        padding: 8px 10px;
+        margin-bottom: 50px;
+    }
+    .heroButtons_sm{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;        
+    }
+    .heroButtons_sm>a{
+        padding: 15px 20px;
+        text-decoration: none;
+        border: 1px solid black;
+    }
+    .heroButtons_sm>a:first-child{
+        background: #FF5202;
+        color: white;
+        border: none;
+    }
+    .imageSection{
+        height: 300px;
+        width: 100vw;
+        margin-top: 50px;
+    }
+    .item{
+        transform: scale(0.6);
+    }
+    .item3{
+        bottom: 9px;
+        left: -70px;
+    }
+    .item2{
+        transform: scale(1);
+        left: 22%;
+        top: -2.6%;
+        /* display: none; */
+    }
+    .item1{
+        bottom:-1px;
+        left: -50px;
+    }
+    .herosectonparentdiv>img{
+        width: 20px;
+    }
+    .herosectonparentdiv>img:nth-child(2){
+        bottom: 5%;
+        left: 15%;
+    }
+    .herosectonparentdiv>img:nth-child(3){
+        bottom: 50%;
+        right: 0%;
+    }
+    .bg-dark{
+        
+        padding-left: 0;
+    }
+    .EOSSECTION{
+        justify-content: center;
+        text-align: center;
+        padding-top: 0;
+    }
+    .EOSSECTION>.content{
+        padding: 25px auto;
+        
+    }
+    .footertext{
+        width: 280px;
+        padding: 30px 94px 10px 94px;
+        text-align: center;
+
+    }
+    .footertext>h1{
+        font-size: 30px;
+        line-height: 35px;
+    }
+    .footertext>span {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
